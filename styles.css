@@ -1,0 +1,20 @@
+#head {
+    background-color: MediumPurple;
+    color: White;
+    border: black 2px solid;
+    text-align: center;
+}
+
+#info {
+    background-color: MediumPurple;
+    color: White;
+    border: black 2px solid;
+    text-align: center;
+}
+
+#goal,
+#task,
+#body {
+    background-color: SkyBlue;
+    border: black 2px solid;
+}
