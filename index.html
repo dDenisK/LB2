@@ -6,47 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Друга лабораторна робота з веб-розробки">
     <meta name="keywords" content="лаборатрна робота, університет, веб-розробка, HTML, CSS">
-    <base target="_blank">
+    <base target="_self">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             background-color: White;
+        }
+
+        .text {
+            margin-left: 2%;
+        }
+
+        [title="font"] {
+            font-family: 'Arial', sans-serif;
         }
     </style>
     <title>LB2</title>
 </head>
 
 <body>
-    <div id="head">
+    <div class="start" id="head" title="font">
         <h1>Лабораторна робота №2</h1>
         <h2>З дисципліни "Веб-розробка"</h2>
         <h3>На тему: "Каскадні таблиці стилів"</h3>
     </div>
     <br>
-    <div id="info">
-        <br>
-        Виконав:
-        <br>
-        студент групи КІУКІ-23-1
-        <br>
-        Каплоух Денис Олександрович
-        <br>
-        Варіант #0
-        <br><br>
+    <div class="start" id="info" title="font">
+        <p>Виконав:</p>
+        <p>студент групи КІУКІ-23-1</p>
+        <p>Каплоух Денис Олександрович</p>
+        <p>Варіант #0</p>
     </div>
     <br>
-    <div id="goal">
-        <h4>2.1 Мета роботи</h4>
-        <ul>
+    <div class="main" id="goal" title="font">
+        <h4 class="text">2.1 Мета роботи</h4>
+        <ul class="text">
             <li>Вивчити принципи вбудовування каскадних таблиць стилів у документ, різновиди селекторів та особливості
                 їх використання, познайомитись із поширеними стильовими властивостями.</li>
             <li>Вивчити способи позиціонування елементів.</li>
         </ul>
     </div>
     <br>
-    <div id="task">
-        <h4>2.2 Варіант завдання</h4>
-        <ol start="0">
+    <div class="main" id="task" title="font">
+        <h4 class="text">2.2 Варіант завдання</h4>
+        <ol start="0" class="text">
             <li>
                 Додати на сторінку елемент, що містить вкладки, що перемикаються. Приклад на малюнку.
             </li>
@@ -56,10 +59,30 @@
         <br><br>
     </div>
     <br>
-    <div id="body">
-        <h4>2.3 Хід роботи</h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum impedit, sed tempore harum perferendis expedita,
-        dolore neque possimus, fugit ad libero minima culpa? Eaque, culpa sit voluptas enim hic dolore.
+    <div class="main" id="body" title="font">
+        <h4 class="text">2.3 Хід роботи</h4>
+        <div class="tabs">
+            <input type="radio" checked name="tab" id="tab1">
+            <label for="tab1" id="exampleID">Вкладка 1</label>
+            <input type="radio" name="tab" id="tab2">
+            <label for="tab2">Вкладка 2</label>
+            <input type="radio" name="tab" id="tab3">
+            <label for="tab3">Вкладка 3</label>
+            <br><br>
+            <div class="tab">
+                <h4>Вміст вкладки 1</h4>
+                <p>Це вміст першої вкладки.</p>
+            </div>
+            <div class="tab">
+                <h4>Вміст вкладки 2</h4>
+                <p>Це вміст другої вкладки.</p>
+            </div>
+            <div class="tab">
+                <h4>Вміст вкладки 3</h4>
+                <p>Це вміст третьої вкладки.</p>
+            </div>
+        </div>
+        <a href="#" id="return" title="exampleTITLE">Повернутися до початку</a>
     </div>
 </body>
 

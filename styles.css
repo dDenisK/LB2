@@ -1,20 +1,69 @@
-#head {
+.start {
     background-color: MediumPurple;
     color: White;
     border: black 2px solid;
     text-align: center;
 }
 
-#info {
-    background-color: MediumPurple;
-    color: White;
-    border: black 2px solid;
-    text-align: center;
-}
-
-#goal,
-#task,
-#body {
+.main {
     background-color: SkyBlue;
     border: black 2px solid;
+}
+
+div.tabs input {
+    display: none;
+}
+
+#exampleID {
+    margin-left: 2%;
+}
+
+#body {
+    position: relative;
+}
+
+div.tabs label {
+    display: block;
+    float:left;
+    cursor: pointer;
+    border: black 2px solid;
+    margin-left: 1%;
+    padding: 1%;
+}
+
+div.tabs input:checked + label {
+    background-color: MediumPurple;
+    color: White;
+    cursor: default;
+}
+
+div.tabs div.tab {
+    display: none;
+    clear: left;
+    border: black 2px solid;
+    background-color: MediumPurple;
+    color: white;
+    margin: 2%;
+    padding-left: 1%;
+}
+
+div.tabs input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
+div.tabs input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+div.tabs input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
+    display: block;
+}
+
+#return {
+    background-color: white;
+    color: MediumPurple;
+    border: black 2px solid;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    padding: 1%;
+}
+
+[title="exampleTITLE"] {
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
 }
