@@ -1,8 +1,10 @@
 .start {
     background-color: MediumPurple;
     color: White;
+    text-shadow: 2px 2px 2px Black;
     border: black 2px solid;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px Grey;
     text-align: center;
 }
 
@@ -10,6 +12,7 @@
     background-color: SkyBlue;
     border: black 2px solid;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px Grey;
 }
 
 div.tabs input {
@@ -30,6 +33,7 @@ div.tabs label {
     cursor: pointer;
     border: black 2px solid;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px Grey;
     margin-left: 1%;
     padding: 1%;
 }
@@ -37,6 +41,7 @@ div.tabs label {
 div.tabs input:checked + label {
     background-color: MediumPurple;
     color: White;
+    text-shadow: 2px 2px 2px Black;
     cursor: default;
 }
 
@@ -45,8 +50,10 @@ div.tabs div.tab {
     clear: left;
     border: black 2px solid;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px Grey;
     background-color: MediumPurple;
     color: white;
+    text-shadow: 2px 2px 2px Black;
     margin: 2%;
     padding-left: 1%;
 }
@@ -62,6 +69,7 @@ div.tabs input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
     color: MediumPurple;
     border: black 2px solid;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px Grey;
     position: fixed;
     right: 2%;
     bottom: 2%;
