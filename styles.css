@@ -2,12 +2,14 @@
     background-color: MediumPurple;
     color: White;
     border: black 2px solid;
+    border-radius: 20px;
     text-align: center;
 }
 
 .main {
     background-color: SkyBlue;
     border: black 2px solid;
+    border-radius: 20px;
 }
 
 div.tabs input {
@@ -27,6 +29,7 @@ div.tabs label {
     float:left;
     cursor: pointer;
     border: black 2px solid;
+    border-radius: 20px;
     margin-left: 1%;
     padding: 1%;
 }
@@ -41,6 +44,7 @@ div.tabs div.tab {
     display: none;
     clear: left;
     border: black 2px solid;
+    border-radius: 20px;
     background-color: MediumPurple;
     color: white;
     margin: 2%;
@@ -57,6 +61,7 @@ div.tabs input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
     background-color: white;
     color: MediumPurple;
     border: black 2px solid;
+    border-radius: 20px;
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -65,5 +70,5 @@ div.tabs input:nth-of-type(3):checked ~ .tab:nth-of-type(3) {
 
 [title="exampleTITLE"] {
     text-decoration: none;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
